@@ -1,6 +1,5 @@
 import ReactQueryProvider from "@/components/ReactQueryProvider";
 import { Toaster } from "@/components/ui/toaster";
-import { QueryClient } from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -34,20 +33,6 @@ export const metadata: Metadata = {
     canonical: "https://artprint.vercel.app/",
   },
 };
-
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      refetchInterval: false,
-      refetchOnWindowFocus: false,
-      staleTime: Infinity,
-      retry: false,
-    },
-    mutations: {
-      retry: false,
-    },
-  },
-});
 
 export default function RootLayout({
   children,

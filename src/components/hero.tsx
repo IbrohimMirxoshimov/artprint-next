@@ -3,6 +3,7 @@
 import { Button } from '@/components/ui/button';
 import { VALUE_PROPOSITIONS } from '@/lib/constants';
 import { Star, Tag, Clock, Award, ArrowRight, Phone } from 'lucide-react';
+import Image from 'next/image';
 
 const iconMap = {
   '⭐': Star,
@@ -53,10 +54,12 @@ export function Hero() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div className="order-2 lg:order-1">
-              <img 
+              <Image 
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Layer%204-gigapixel-standard%20v2-2x.png-WQSnhQOCNVfXtL99UQnVx81hYTfF04.jpeg" 
                 alt="Корпоративная одежда с логотипом" 
                 className="rounded-xl shadow-lg w-full h-auto hover-lift" 
+                width={500}
+                height={500}
               />
             </div>
             <div className="order-1 lg:order-2 text-left">

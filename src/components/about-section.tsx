@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Phone } from 'lucide-react';
+import Image from 'next/image';
 
 export function AboutSection() {
   const scrollToContact = () => {
@@ -25,10 +26,12 @@ export function AboutSection() {
           {/* Left column - Quality badge and main content */}
           <div className="lg:col-span-2 space-y-8">
             <div className="flex items-center space-x-4 mb-6">
-              <img 
+              <Image 
                 src="https://i.postimg.cc/5ttzTwV5/badge-1.png" 
                 alt="Quality badge" 
                 className="w-16 h-16 flex-shrink-0" 
+                width={64}
+                height={64}
               />
               <h3 className="text-2xl font-bold text-primary">Гарантия качества</h3>
             </div>
@@ -44,10 +47,12 @@ export function AboutSection() {
 
             {/* Call to action moved here */}
             <div className="flex items-center space-x-4 p-6 bg-gradient-to-r from-accent/10 to-primary/10 rounded-xl border border-accent/20">
-              <img 
+              <Image 
                 src="https://i.postimg.cc/zf9cfDpQ/shop.png" 
                 alt="Order icon" 
                 className="w-12 h-12 flex-shrink-0" 
+                width={48}
+                height={48}
               />
               <div>
                 <p className="text-lg font-semibold text-primary mb-1">Закажите нашу одежду с принтами уже сегодня</p>
@@ -59,10 +64,12 @@ export function AboutSection() {
           {/* Right column - Image */}
           <div className="lg:col-span-1">
             <div className="sticky top-8">
-              <img 
+              <Image 
                 src="https://images.unsplash.com/photo-1563170351-be82bc888aa4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
                 alt="Modern printing equipment and quality materials" 
                 className="rounded-xl shadow-lg w-full h-auto hover:scale-105 transition-transform duration-300" 
+                width={800}
+                height={600}
               />
             </div>
           </div>

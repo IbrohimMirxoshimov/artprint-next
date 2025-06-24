@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // In-memory storage for contact requests (in production, use a database)
-let contactRequests: Array<{
+const contactRequests: Array<{
   id: string;
   name: string;
   phone: string;

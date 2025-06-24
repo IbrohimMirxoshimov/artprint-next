@@ -38,7 +38,7 @@ export function ContactSection() {
       });
       setFormData({ name: '', phone: '', message: '' });
     },
-    onError: (error: any) => {
+    onError: (error: Error) => {
       toast({
         variant: "destructive",
         title: "Ошибка отправки",

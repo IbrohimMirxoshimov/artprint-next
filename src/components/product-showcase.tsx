@@ -3,6 +3,7 @@
 import { PRODUCT_CATEGORIES } from '@/lib/constants';
 import { Button } from '@/components/ui/button';
 import { ShoppingCart } from 'lucide-react';
+import Image from 'next/image';
 
 export function ProductShowcase() {
   const scrollToContact = () => {
@@ -27,10 +28,12 @@ export function ProductShowcase() {
             <div key={category.id} className="group cursor-pointer">
               <div className="bg-card border border-border rounded-xl p-6 hover:shadow-lg transition-all duration-300 group-hover:bg-secondary/5 hover-lift">
                 <div className="aspect-square mb-4 overflow-hidden rounded-lg">
-                  <img 
+                  <Image 
                     src={category.image} 
                     alt={`${category.name} с логотипом`} 
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                    width={200}
+                    height={200}
                   />
                 </div>
                 <h3 className="text-lg font-semibold text-primary mb-2">{category.name}</h3>

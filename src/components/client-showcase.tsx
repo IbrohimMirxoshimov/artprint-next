@@ -1,4 +1,5 @@
 import { CLIENT_LOGOS } from '@/lib/constants';
+import Image from 'next/image';
 
 export function ClientShowcase() {
   return (
@@ -19,10 +20,12 @@ export function ClientShowcase() {
               key={index} 
               className="bg-white border border-border p-4 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 flex items-center justify-center h-20 logo-hover"
             >
-              <img 
+              <Image 
                 src={logo.image} 
                 alt={logo.name} 
                 className="max-h-12 max-w-full object-contain" 
+                width={100}
+                height={50}
               />
             </div>
           ))}

@@ -15,10 +15,6 @@ export function Header() {
     setIsMenuOpen(false);
   };
 
-  const handleOrderClick = () => {
-    scrollToSection('contact');
-  };
-
   return (
     <header className="bg-background border-b border-border shadow-lg sticky top-0 z-50 backdrop-blur-sm bg-background/95">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
